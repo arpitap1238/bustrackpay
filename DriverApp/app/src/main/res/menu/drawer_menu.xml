@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/side_home"
+            android:icon="@drawable/ic_home"
+            android:title="Driver Dashboard" />
+        <item
+            android:id="@+id/side_routes"
+            android:icon="@drawable/ic_route"
+            android:title="Assigned Routes" />
+        <item
+            android:id="@+id/side_students"
+            android:icon="@drawable/ic_person"
+            android:title="Student Roster" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/side_profile"
+                android:icon="@drawable/ic_person"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/side_notifications"
+                android:icon="@drawable/ic_notifications"
+                android:title="Notifications" />
+        </menu>
+    </item>
+
+    <item android:title="System">
+        <menu>
+            <item
+                android:id="@+id/side_support"
+                android:icon="@drawable/ic_support"
+                android:title="Help &amp; Maintenance" />
+            <item
+                android:id="@+id/side_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

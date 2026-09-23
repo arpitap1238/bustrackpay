@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Gradient Background -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:startColor="#5083ED"
+                android:centerColor="#266FEF"
+                android:endColor="#1E5AD1"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Artistic Geometric Slant (White Overlay with Transparency) -->
+    <item
+        android:top="140dp"
+        android:bottom="-100dp"
+        android:left="-50dp"
+        android:right="-50dp">
+        <rotate
+            android:fromDegrees="-15"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape>
+                <solid android:color="#0DFFFFFF" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Second Slant for Layered Depth -->
+    <item
+        android:top="160dp"
+        android:bottom="-120dp"
+        android:left="-60dp"
+        android:right="-60dp">
+        <rotate
+            android:fromDegrees="-8"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape>
+                <solid android:color="#1AFFFFFF" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Subtle Bottom Glow Line -->
+    <item android:top="199dp">
+        <shape>
+            <solid android:color="#33FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

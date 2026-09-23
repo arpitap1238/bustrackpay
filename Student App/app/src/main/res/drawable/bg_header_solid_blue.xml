@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Solid Background -->
+    <item>
+        <shape>
+            <solid android:color="#266FEF" />
+        </shape>
+    </item>
+
+    <!-- Subtle Artistic Etching (Low Opacity Slants) -->
+    <item
+        android:top="100dp"
+        android:bottom="-80dp"
+        android:left="-40dp"
+        android:right="-40dp">
+        <rotate
+            android:fromDegrees="-15"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape>
+                <solid android:color="#08FFFFFF" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:top="120dp"
+        android:bottom="-100dp"
+        android:left="-50dp"
+        android:right="-50dp">
+        <rotate
+            android:fromDegrees="-8"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape>
+                <solid android:color="#0AFFFFFF" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

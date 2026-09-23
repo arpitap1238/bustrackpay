@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "788583888133",
+    "firebase_url": "https://bus-tracking-ampv-default-rtdb.firebaseio.com",
+    "project_id": "bus-tracking-ampv",
+    "storage_bucket": "bus-tracking-ampv.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788583888133:android:b99bdfbc2e855b521c336c",
+        "android_client_info": {
+          "package_name": "com.example.driverapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDZu4ghcxDVlG-p_wAHNKYyIh1066OWto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788583888133:android:e1487cb20be34d3b1c336c",
+        "android_client_info": {
+          "package_name": "com.example.studentapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDZu4ghcxDVlG-p_wAHNKYyIh1066OWto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="120dp">
+
+        <!-- 1. IMAGE-MATCH FEATURED HERO CARD -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_featured"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_featured_card"
+            android:elevation="0dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lbl_status_hero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:text="Bus Status"
+                android:textColor="#E0F2FE"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_status_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Arrived at Stop"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/lbl_status_hero"
+                app:layout_constraintTop_toBottomOf="@id/lbl_status_hero" />
+
+            <TextView
+                android:id="@+id/tv_stop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College Gate Stop"
+                android:textColor="#BAE6FD"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/tv_status_main"
+                app:layout_constraintTop_toBottomOf="@id/tv_status_main" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_view_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_service_card"
+                android:paddingHorizontal="24dp"
+                android:text="View Detail"
+                android:textAllCaps="false"
+                android:textColor="#266FEF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_status_main" />
+
+            <!-- Using a Placeholder icon for the 3D graphic in the image -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_bus_logo"
+                android:alpha="0.8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 2. IMAGE-MATCH SERVICE GRID (2x2) -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            app:layout_constraintTop_toBottomOf="@id/card_featured">
+
+            <!-- Card 1: Routes -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_routes"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_service_card"
+                android:padding="16dp">
+
+                <View
+                    android:id="@+id/icon_bg_1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_icon_tint_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_route"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_bg_1"
+                    app:layout_constraintEnd_toEndOf="@id/icon_bg_1"
+                    app:layout_constraintStart_toStartOf="@id/icon_bg_1"
+                    app:layout_constraintTop_toTopOf="@id/icon_bg_1"
+                    app:tint="#266FEF" />
+
+                <TextView
+                    android:id="@+id/tv_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="My Routes"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_bg_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="14 Points"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Card 2: Tracking -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_track_grid"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_service_card"
+                android:padding="16dp">
+
+                <View
+                    android:id="@+id/icon_bg_2"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_icon_tint_pink"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_location"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_bg_2"
+                    app:layout_constraintEnd_toEndOf="@id/icon_bg_2"
+                    app:layout_constraintStart_toStartOf="@id/icon_bg_2"
+                    app:layout_constraintTop_toTopOf="@id/icon_bg_2"
+                    app:tint="#EF4444" />
+
+                <TextView
+                    android:id="@+id/tv_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Live Tracking"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_bg_2" />
+
+                <TextView
+                    android:id="@+id/tv_grid_bus_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Bus #42 Active"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Card 3: Fees -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_fees"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_service_card"
+                android:padding="16dp">
+
+                <View
+                    android:id="@+id/icon_bg_3"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_icon_tint_orange"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_payment"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_bg_3"
+                    app:layout_constraintEnd_toEndOf="@id/icon_bg_3"
+                    app:layout_constraintStart_toStartOf="@id/icon_bg_3"
+                    app:layout_constraintTop_toTopOf="@id/icon_bg_3"
+                    app:tint="#FF9800" />
+
+                <TextView
+                    android:id="@+id/tv_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Bus Fees"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_bg_3" />
+
+                <TextView
+                    android:id="@+id/tv_fees_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Due in 4 days"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Card 4: Profile -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_profile"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_service_card"
+                android:padding="16dp">
+
+                <View
+                    android:id="@+id/icon_bg_4"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_icon_tint_green"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_person"
+                    app:layout_constraintBottom_toBottomOf="@id/icon_bg_4"
+                    app:layout_constraintEnd_toEndOf="@id/icon_bg_4"
+                    app:layout_constraintStart_toStartOf="@id/icon_bg_4"
+                    app:layout_constraintTop_toTopOf="@id/icon_bg_4"
+                    app:tint="#22C55E" />
+
+                <TextView
+                    android:id="@+id/tv_title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Account"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_bg_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Verified Profile"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

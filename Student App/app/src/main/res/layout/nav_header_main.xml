@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@drawable/bg_header_artistic"
+    android:padding="32dp"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/avatar_bg"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/card_bg_rounded"
+        android:backgroundTint="#33FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_bg"
+        app:layout_constraintEnd_toEndOf="@id/avatar_bg"
+        app:layout_constraintStart_toStartOf="@id/avatar_bg"
+        app:layout_constraintTop_toTopOf="@id/avatar_bg"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_user_name_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="John Doe"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_bg" />
+
+    <TextView
+        android:id="@+id/tv_student_id_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="EN12345678"
+        android:textColor="#E0F2FE"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name_side" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

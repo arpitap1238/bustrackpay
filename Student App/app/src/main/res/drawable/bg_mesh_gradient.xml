@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Deep Mesh Base -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="0"
+                android:endColor="#1E5AD1"
+                android:startColor="#266FEF"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Secondary Color Flow (Top Right) -->
+    <item>
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="100%"
+            android:pivotY="0%"
+            android:toDegrees="45">
+            <shape>
+                <gradient
+                    android:centerX="1"
+                    android:centerY="0"
+                    android:endColor="#005083ED"
+                    android:gradientRadius="400dp"
+                    android:startColor="#665083ED"
+                    android:type="radial" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Highlight Flow (Bottom Left) -->
+    <item>
+        <shape>
+            <gradient
+                android:centerX="0.2"
+                android:centerY="0.8"
+                android:endColor="#00FFFFFF"
+                android:gradientRadius="350dp"
+                android:startColor="#1AFFFFFF"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>

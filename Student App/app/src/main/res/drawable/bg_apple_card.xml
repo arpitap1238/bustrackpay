@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Shadow/Glow -->
+    <item>
+        <shape>
+            <corners android:radius="28dp" />
+            <solid android:color="#0D266FEF" />
+        </shape>
+    </item>
+    <!-- Card Body (Glassmorphism inspired) -->
+    <item android:bottom="2dp" android:left="1dp" android:right="1dp" android:top="1dp">
+        <shape>
+            <solid android:color="#266FEF" />
+            <corners android:radius="28dp" />
+            <stroke
+                android:width="1.5dp"
+                android:color="#4DFFFFFF" />
+        </shape>
+    </item>
+    <!-- Inner Top Highlight -->
+    <item android:bottom="40dp" android:left="10dp" android:right="10dp" android:top="2dp">
+        <shape>
+            <corners android:radius="28dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#20FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

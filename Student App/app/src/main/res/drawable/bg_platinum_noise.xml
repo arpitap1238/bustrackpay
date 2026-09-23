@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Immersive Mesh Base (Sync with existing mesh but deeper) -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:endColor="#0A2A75"
+                android:startColor="#1E5AD1"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Platinum Texture Overlay (Simulated Noise via low-alpha radial) -->
+    <item>
+        <shape>
+            <gradient
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:endColor="#00000000"
+                android:gradientRadius="400dp"
+                android:startColor="#0DFFFFFF"
+                android:type="radial" />
+        </shape>
+    </item>
+
+    <!-- Bottom Vignette -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="90"
+                android:endColor="#00000000"
+                android:startColor="#4D000000" />
+        </shape>
+    </item>
+</layer-list>

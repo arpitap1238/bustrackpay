@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Premium Cerulean Theme (Ported from Student App) -->
+    <color name="colorPrimary">#0F67FD</color> <!-- Radiant Blue -->
+    <color name="colorPrimaryDark">#0842A8</color> <!-- Deep Deep Navy -->
+    <color name="colorAccent">#3ABFF8</color> <!-- Sky Blue Accent -->
+    
+    <!-- Ultra Soft Gradient Colors -->
+    <color name="gradient_start">#0F67FD</color>
+    <color name="gradient_end">#5C8DF6</color>
+    
+    <!-- Backgrounds & Surfaces -->
+    <color name="background_color">#FFFFFF</color> 
+    <color name="card_background">#FFFFFF</color>
+    <color name="surface_variant">#FFFFFF</color> 
+    
+    <!-- Text Colors -->
+    <color name="text_primary_on_dark">#FFFFFF</color> 
+    <color name="text_secondary_on_dark">#CBD5E1</color> 
+    <color name="text_primary">#1E293B</color> 
+    <color name="text_secondary">#64748B</color> 
+    <color name="text_hint">#94A3B8</color> 
+    
+    <color name="success_color">#10B981</color> 
+    <color name="error_color">#EF4444</color> 
+    <color name="warning_color">#F59E0B</color> 
+
+    <color name="divider_color">#E2E8F0</color> 
+</resources>
