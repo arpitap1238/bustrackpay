@@ -124,7 +124,6 @@ Administrators can:
 
 ## 🔄 How Bus Tracking Works
 
-```text
 Driver starts "Go Live"
           ↓
 Driver's GPS location is obtained
@@ -133,7 +132,7 @@ Location is updated in Firebase
           ↓
 Student App retrieves the location
           ↓
-Student can view the bus location👨‍💻 My Contribution
+Student can view the bus location👨💻 My Contribution
 
 I contributed to the development of BusTrackPay, mainly focusing on:
 
